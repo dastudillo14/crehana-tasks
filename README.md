@@ -40,7 +40,7 @@ Para el desarrollo local sin Docker, sigue estos pasos para configurar un entorn
 
 **a. Clona el repositorio:**
 ```bash
-git clone <url-de-tu-repositorio>
+git clone https://github.com/dastudillo14/crehana-tasks.git
 cd crehana-test
 ```
 
