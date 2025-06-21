@@ -1,0 +1,23 @@
+[flake8]
+# Set the maximum line length. The default is 79, which is often too restrictive.
+max-line-length = 99
+
+# A list of error codes to ignore globally.
+# W503: line break before binary operator (this rule conflicts with the 'black' code formatter).
+ignore =
+    W503
+
+# A list of comma-separated glob patterns to exclude from linting.
+# It's good practice to exclude virtual environments, VCS directories, and caches.
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    data/
+
+# You can ignore specific rules for certain files.
+# For example, it's common for __init__.py files to have unused imports
+# if they are used to expose a public API for the package.
+per-file-ignores =
+    # F401: 'module' imported but unused
+    src/**/__init__.py: F401 

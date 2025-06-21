@@ -1,0 +1,15 @@
+[tool.black]
+# Set the line length to be consistent with flake8.
+line-length = 99
+
+# A list of file or directory patterns to exclude from formatting.
+exclude = '''
+(
+  /(
+      \.git
+    | \.venv
+    | __pycache__
+    | data
+  )/
+)
+''' 
